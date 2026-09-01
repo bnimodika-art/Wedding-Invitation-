@@ -1,96 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Wedding Invitation</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, serif;
-      background: #fffaf5;
-      color: #4a3a32;
-      text-align: center;
-    }
-
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 30px;
-      box-sizing: border-box;
-    }
-
-    .small {
-      font-size: 18px;
-      letter-spacing: 3px;
-    }
-
-    h1 {
-      font-size: 42px;
-      margin: 20px 0 10px;
-    }
-
-    .and {
-      font-size: 25px;
-      font-style: italic;
-    }
-
-    .date {
-      font-size: 20px;
-      margin-top: 25px;
-      letter-spacing: 2px;
-    }
-
-    .message {
-      max-width: 600px;
-      line-height: 1.8;
-      font-size: 17px;
-      margin-top: 25px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 13px 25px;
-      border-radius: 30px;
-      background: #6b5145;
-      color: white;
-      text-decoration: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nimodhika & Nilan | Wedding Invitation</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#eee5d8;color:#3d332b;font-family:Georgia,serif}
+main{max-width:900px;margin:auto;background:#fffaf3}
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:30px}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(#0003,#0009),url("images/photo1.jpg") center/cover}
+.content{position:relative;z-index:1}
+.script{font-family:cursive;font-size:32px}
+h1{font-family:cursive;font-size:70px;font-weight:400;margin:10px}
+h1 span,h2 span{color:#d8b36a}
+.date{font-size:22px;letter-spacing:4px;margin:25px}
+button,.btn{background:#3d5042;color:white;border:0;padding:14px 25px;border-radius:30px;text-decoration:none;display:inline-block}
+.nav{position:sticky;top:0;background:#fffaf3;padding:14px;text-align:center;z-index:5}
+.nav a{margin:0 7px;color:#65523d;text-decoration:none;font-size:13px}
+section:not(.hero){padding:60px 7%;text-align:center;border-bottom:1px solid #e1d3bd}
+h2{font-family:cursive;font-size:55px;color:#3d5042;font-weight:400}
+p{font-size:19px;line-height:1.6}
+.family{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.family h3{font-family:cursive;font-size:42px;color:#a67b3c}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.gallery img{width:100%;height:350px;object-fit:cover}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.count div{background:#f1e8da;padding:18px}
+.count b{display:block;font-size:35px;color:#3d5042}
+.closing{min-height:500px;position:relative;color:white;display:flex;align-items:center;justify-content:center;text-align:center}
+.closing:before{content:"";position:absolute;inset:0;background:linear-gradient(#0004,#0008),url("images/photo6.jpg") center/cover}
+.closing div{position:relative}
+.sinhala{font-family:serif}
+@media(max-width:600px){
+h1{font-size:55px}
+h2{font-size:45px}
+.family{grid-template-columns:1fr}
+.gallery{grid-template-columns:1fr 1fr}
+.gallery img{height:240px}
+.count{grid-template-columns:1fr 1fr}
+}
+</style>
 </head>
-
 <body>
+<main>
 
-  <section class="hero">
+<section class="hero">
+<div class="content">
+<p class="script">Together with their families</p>
+<p>REQUEST THE HONOUR OF YOUR PRESENCE</p>
+<h1>Nimodhika <span>&</span> Nilan</h1>
+<p class="script">are getting married</p>
+<div class="date">03 AUGUST 2026</div>
+<p>Hottel Chandhiu · Kaburugamuwa · Mathara</p>
+<button onclick="document.getElementById('details').scrollIntoView({behavior:'smooth'})">VIEW WEDDING DETAILS</button>
+</div>
+</section>
 
-    <div class="small">TOGETHER WITH THEIR FAMILIES</div>
+<nav class="nav">
+<a href="#details">DETAILS</a>
+<a href="#gallery">PHOTOS</a>
+<a href="#location">MAP</a>
+<a href="#rsvp">RSVP</a>
+</nav>
 
-    <h1>Ashan</h1>
+<section id="details">
+<p>THE WEDDING OF</p>
+<h2>Nimodhika <span>&</span> Nilan</h2>
+<p>With joyful hearts, we warmly invite you and your family to celebrate one of the most special days of our lives as we begin our journey together.</p>
 
-    <div class="and">&</div>
+<div class="family">
+<div>
+<p>DAUGHTER OF</p>
+<p><b>Mr. D.M. Thilakarathna</b><br>&<br><b>Mrs. I.M. Nilanthi Gunarathna</b></p>
+<h3>Nimodhika</h3>
+</div>
+<div>
+<p>SON OF</p>
+<p><b>Mr. N.P. Liyanarathna</b><br>&<br><b>Mrs. L.A. Renuka Dassanayake</b></p>
+<h3>Nilan</h3>
+</div>
+</div>
 
-    <h1>Sathsarani</h1>
+<p class="sinhala">අපගේ ආදරණීය විවාහ මංගල්‍යය සැමරීමට ඔබගේ ගෞරවනීය සහභාගීත්වය අපි ආදරයෙන් අපේක්ෂා කරමු.</p>
 
-    <div class="date">
-      20 DECEMBER 2026
-    </div>
+<p><b>03 August 2026</b><br>
+10.00 a.m. – 4.00 p.m.<br>
+Poruwa Ceremony · 10.16 a.m.<br><br>
+<b>Hottel Chandhiu</b><br>
+Kaburugamuwa, Mathara</p>
+</section>
 
-    <div class="message">
-      With joyful hearts, we invite you to celebrate
-      our special day and share the beginning of
-      our beautiful journey together.
-    </div>
+<section id="gallery">
+<p>OUR MEMORIES</p>
+<h2>Photo Gallery</h2>
+<div class="gallery">
+<img src="images/photo1.jpg">
+<img src="images/photo2.jpg">
+<img src="images/photo3.jpg">
+<img src="images/photo4.jpg">
+<img src="images/photo5.jpg">
+<img src="images/photo6.jpg">
+</div>
+</section>
 
-    <a class="button" href="#">
-      VIEW WEDDING DETAILS
-    </a>
+<section>
+<p>COUNTING THE MOMENTS</p>
+<h2>Until Our Special Day</h2>
+<div class="count">
+<div><b id="d">0</b>Days</div>
+<div><b id="h">0</b>Hours</div>
+<div><b id="m">0</b>Minutes</div>
+<div><b id="s">0</b>Seconds</div>
+</div>
+</section>
 
-  </section>
+<section id="location">
+<p>JOIN US</p>
+<h2>Wedding Location</h2>
+<p><b>Hottel Chandhiu</b><br>Kaburugamuwa, Mathara</p>
+<a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Hottel%20Chandhiu%20Kaburugamuwa%20Mathara">📍 OPEN GOOGLE MAPS</a>
+</section>
 
+<section id="rsvp">
+<p>KINDLY RESPOND</p>
+<h2>RSVP</h2>
+<p>Nilan · 071 336 5233</p>
+<a class="btn" target="_blank" href="https://wa.me/94713365233">💬 RSVP ON WHATSAPP</a>
+</section>
+
+<section class="closing">
+<div>
+<p class="script">Forever starts here</p>
+<h2 style="color:white">Nimodhika <span>&</span> Nilan</h2>
+<p class="sinhala">ඔබගේ පැමිණීම අපගේ විශේෂ දිනය තවත් විශේෂ කරනු ඇත. ❤️</p>
+</div>
+</section>
+
+<script>
+const wedding=new Date("2026-08-03T10:00:00+05:30").getTime();
+setInterval(()=>{
+let x=Math.max(0,wedding-Date.now());
+document.getElementById("d").textContent=Math.floor(x/86400000);
+document.getElementById("h").textContent=Math.floor(x/3600000)%24;
+document.getElementById("m").textContent=Math.floor(x/60000)%60;
+document.getElementById("s").textContent=Math.floor(x/1000)%60;
+},1000);
+</script>
+
+</main>
 </body>
 </html>
